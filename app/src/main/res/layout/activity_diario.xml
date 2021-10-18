@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".DiariohActivity"
+    android:background="@drawable/fondoperfil">
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:id="@+id/datComida"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#f7b8ff3c"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/datComida"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALORES TOTALES"
+        android:id="@+id/textView19"
+        android:textColor="#98254a00"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/textView18"
+        android:visibility="invisible" />
+
+    <TextView
+        android:text="Calorías"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#ff61a904"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtC0"
+        android:layout_above="@+id/txtGrasas"
+        android:layout_toLeftOf="@+id/textView19"
+        android:layout_toStartOf="@+id/textView19" />
+
+    <TextView
+        android:text="Grasas"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#ff61a904"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignRight="@+id/textView19"
+        android:layout_alignEnd="@+id/textView19" />
+
+    <TextView
+        android:text="0.00"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textColor="#98040504"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCaloria"
+        android:layout_below="@+id/txtC0"
+        android:layout_alignLeft="@+id/txtC0"
+        android:layout_alignStart="@+id/txtC0" />
+
+    <TextView
+        android:text="0.00"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textColor="#98040504"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGrasas"
+        android:layout_below="@+id/textView20"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20" />
+
+    <TextView
+        android:text="Proteínas"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#ff61a904"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:layout_below="@+id/txtCaloria"
+        android:layout_alignLeft="@+id/txtCaloria"
+        android:layout_alignStart="@+id/txtCaloria" />
+
+    <TextView
+        android:text="Carbohidratos"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#ff61a904"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/txtGrasas"
+        android:layout_alignLeft="@+id/txtGrasas"
+        android:layout_alignStart="@+id/txtGrasas" />
+
+    <TextView
+        android:text="0.00"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textColor="#98040504"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtProteina"
+        android:layout_below="@+id/textView21"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21" />
+
+    <TextView
+        android:text="0.00"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textColor="#98040504"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCarbo"
+        android:layout_alignBottom="@+id/txtProteina"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#f7b8ff3c"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/txtCarbo"
+        android:layout_toStartOf="@+id/editText2"
+        android:layout_toLeftOf="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlimento"
+        android:hint="Agregar alimento..."
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#98040504"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_toStartOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:background="@drawable/icon_agregar"
+        android:layout_below="@+id/textView23"
+        android:layout_alignRight="@+id/textView20"
+        android:layout_alignEnd="@+id/textView20"
+        android:layout_alignBottom="@+id/txtAlimento" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listAlimento"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtAlimento"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:text="Buscar"
+        android:id="@+id/btnBuscar"
+        android:layout_alignBottom="@+id/datComida"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:text="Porción gr."
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#ff61a904"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView28"
+        android:layout_above="@+id/textView23"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+
+
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/editText2"
+        android:textColorHint="#98254a00"
+        android:textColor="#98040504"
+        android:inputType="numberDecimal"
+        android:background="#dd92e204"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView28"
+        android:layout_toRightOf="@+id/textView20"
+        android:layout_toEndOf="@+id/textView20"
+        android:layout_alignBottom="@+id/button5" />
+
+
+</RelativeLayout>

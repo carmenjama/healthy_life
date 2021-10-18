@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HealthLife</string>
+
+    <string name="action_perfil">Editar Perfil</string>
+    <string name="action_adenfer">Agregar Enfermedad</string>
+    <string name="action_listenfer">Lista Enfermedades</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_pass">Modificar Contraseña</string>
+    <string name="action_familia">Mi Familia</string>
+    <string name="action_diario">Diario de ALimentos</string>
+    <string name="action_informe">Informe Familia</string>
+    <string name="action_cat">Categorías</string>
+</resources>

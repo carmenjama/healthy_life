@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoperfil">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:id="@+id/txtUsuario"
+        android:textColorHint="#FFB8B8B8"
+        android:background="#ffffffff"
+        android:textColor="#ff343434"
+        android:hint="   Ejem: carmenjama96"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignRight="@+id/txtPass2"
+        android:layout_alignEnd="@+id/txtPass2" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:id="@+id/txtPass1"
+        android:textColorHint="#FFB8B8B8"
+        android:background="#ffffffff"
+        android:textColor="#ff343434"
+        android:inputType="textPassword"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/txtUsuario"
+        android:layout_alignEnd="@+id/txtUsuario" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:id="@+id/txtPass2"
+        android:textColorHint="#FFB8B8B8"
+        android:background="#ffffffff"
+        android:textColor="#ff343434"
+        android:inputType="textPassword"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:id="@+id/textView"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/txtUsuario"
+        android:layout_alignStart="@+id/txtUsuario" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Contraseña"
+        android:id="@+id/textView2"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtUsuario"
+        android:layout_alignLeft="@+id/txtUsuario"
+        android:layout_alignStart="@+id/txtUsuario" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirme contraseña"
+        android:id="@+id/textView3"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="9dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/txtPass1"
+        android:layout_alignLeft="@+id/txtPass2"
+        android:layout_alignStart="@+id/txtPass2" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="CONFIRMAR"
+        android:id="@+id/button3"
+        android:background="#383a4824"
+        android:textColor="#98040504"
+        android:layout_below="@+id/txtPass2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView4"
+        android:background="@drawable/logo4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:id="@+id/editText"
+        android:textColorHint="#FFB8B8B8"
+        android:background="#ffffffff"
+        android:textColor="#ff343434"
+        android:inputType="textPassword"
+        android:enabled="false"
+        android:visibility="invisible"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="CANCELAR"
+        android:id="@+id/button2"
+        android:background="#383a4824"
+        android:textColor="#98040504"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

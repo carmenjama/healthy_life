@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondoperfil"
+    tools:context=".FamiliaActivity">
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/opFamilia"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#98254a00" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#28000000"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/opFamilia"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATOS"
+        android:id="@+id/textView16"
+        android:textColor="#98254a00"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:id="@+id/tableLayout2">
+        <TableRow>
+            <TextView
+                android:text="Altura"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#ff61a904"
+                android:textSize="18dp" />
+            <TextView
+                android:text="Peso"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#ff61a904"
+                android:textSize="18dp" />
+        </TableRow>
+        <TableRow
+            android:background="#cfb5ff3d">
+            <EditText
+                android:id="@+id/txtAltura"
+                android:layout_weight="1"
+                android:enabled="false"/>
+            <EditText
+                android:id="@+id/txtPeso"
+                android:layout_weight="1"
+                android:enabled="false" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Edad"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#ff61a904"
+                android:textSize="18dp" />
+            <TextView
+                android:text="Estilo de vida"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#ff61a904"
+                android:textSize="18dp" />
+        </TableRow>
+        <TableRow
+            android:background="#cfb5ff3d">
+
+            <EditText
+                android:id="@+id/txtEdad"
+                android:layout_weight="1"
+                android:enabled="false"/>
+            <EditText
+                android:id="@+id/txtVida"
+                android:layout_weight="1"
+                android:enabled="false"/>
+        </TableRow>
+        <TextView
+            android:text="Alimentos no recomendados"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#ff61a904"
+            android:textSize="18dp" />
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="271dp"
+            android:id="@+id/listEnfermedades"
+            android:background="#22b5ff3d" />
+    </TableLayout>
+
+</RelativeLayout>

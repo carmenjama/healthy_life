@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.carmenjama.healthlife" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:label="HealthyLife">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SesionActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name=".RegistroActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name=".InicioActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:logo="@mipmap/ic_launcher">
+        </activity>
+        <activity
+            android:name=".PerfilActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:label="@string/action_perfil">
+        </activity>
+        <activity
+            android:name=".AdEnfermedadActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="@string/action_adenfer">
+        </activity>
+        <activity
+            android:name=".ListEnferActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="@string/action_listenfer">
+        </activity>
+        <activity
+            android:name=".PassActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="@string/action_pass">/
+        </activity>
+        <activity
+            android:name=".FamiliaActivity"
+            android:theme="@android:style/Theme.Holo"
+            android:label="@string/action_familia">
+        </activity>
+        <activity
+            android:name=".AdFamiliaActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="Nuevo Familiar">
+        </activity>
+        <activity
+            android:name=".DiarioActivity"
+            android:theme="@android:style/Theme.Holo"
+            android:label="@string/action_diario">
+        </activity>
+        <activity
+            android:name=".InformeFamilia"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="Informe familia">
+        </activity>
+        <activity
+            android:name=".CategoriaActivity"
+            android:theme="@android:style/Theme.Holo"
+            android:label="@string/action_cat">
+        </activity>
+        <activity
+            android:name=".ActivityMenu"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="Menu">
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondoperfil"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#ff61a904" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/txtNombre"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#98040504" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Altura"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textColor="#ff61a904" />
+            <TextView/>
+            <TextView
+                android:text="Peso en Kg."
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textColor="#ff61a904" />
+            <TextView/>
+
+            <TextView
+                android:text="Sexo"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textColor="#ff61a904"
+                android:layout_column="13" />
+        </TableRow>
+        <TableRow>
+            <EditText android:id="@+id/txtAltura"
+                android:layout_weight="1"
+                android:textColor="#98040504"
+                android:layout_height="40dp"
+                android:inputType="numberDecimal" /><TextView/>
+            <EditText android:id="@+id/txtPeso"
+                android:layout_weight="1"
+                android:hint="kg"
+                android:textColor="#98040504"
+                android:layout_height="40dp"
+                android:inputType="numberDecimal" /><TextView/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer"
+                    android:id="@+id/sexMujer"
+                    android:checked="false"
+                    android:textColor="#98040504"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre"
+                    android:id="@+id/sexHombre"
+                    android:checked="false"
+                    android:textColor="#98040504"
+                    android:layout_weight="1"
+                    android:layout_column="11" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:id="@+id/textView9"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ff61a904" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:collapseColumns="1">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="100dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2-3 Años"
+                android:id="@+id/edad0"
+                android:checked="false"
+                android:textColor="#98040504"
+                android:layout_weight="1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4-8 Años"
+                android:id="@+id/edad1"
+                android:checked="false"
+                android:textColor="#98040504"
+                android:layout_weight="1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9-13 Años"
+                android:id="@+id/edad2"
+                android:checked="false"
+                android:textColor="#98040504"
+                android:layout_weight="1"
+                android:layout_column="11" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14-18 Años"
+                android:id="@+id/edad3"
+                android:checked="false"
+                android:textColor="#98040504"
+                android:layout_weight="1"
+                android:layout_column="11" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19-30 Años"
+                android:id="@+id/edad4"
+                android:checked="false"
+                android:textColor="#98040504"
+                android:layout_weight="1"
+                android:layout_column="11" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31-50 Años"
+                android:id="@+id/edad5"
+                android:checked="false"
+                android:textColor="#98040504"
+                android:layout_weight="1"
+                android:layout_column="11" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+50 Años"
+                android:id="@+id/edad6"
+                android:checked="false"
+                android:textColor="#98040504"
+                android:layout_weight="1"
+                android:layout_column="11" />
+        </RadioGroup>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estilo de Vida"
+        android:id="@+id/textView11"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ff61a904"
+        android:layout_weight="1" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#f7b8ff3c"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enfermedades"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#ff61a904" />
+
+    ListView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/listView2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#f7b8ff3c"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <EditText android:id="@+id/txtBuscar"
+                android:hint="Agregar enfermedad..."
+                android:layout_weight="4"
+                android:background="#fffdfffd"
+                android:layout_height="40dp"/>
+            <Button android:id="@+id/btnLista"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:background="@drawable/icon_agregar" />
+            <Button android:id="@+id/btnBuscar"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:background="@drawable/icon_buscar" />
+            <Button android:id="@+id/btnAgregar"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:background="@drawable/icon_agregar3" />
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/listView"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:collapseColumns="1">
+        <TableRow>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAceptar"
+                android:text="Aceptar"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+</ScrollView>
